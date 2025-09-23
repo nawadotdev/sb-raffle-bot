@@ -27,8 +27,8 @@ const client = new Client({
 client.once(Events.ClientReady, async c => {
     console.log(`Ready! Logged in as ${c.user.tag}`)
 
-    const guildId = "1183302319987752971"
-    const channelId = "1420097709724930220"
+    // const guildId = "1183302319987752971"
+    // const channelId = "1420097709724930220"
 
     // const guild = await client.guilds.fetch(guildId)
     // if (!guild) {
@@ -45,6 +45,7 @@ client.once(Events.ClientReady, async c => {
     //     .setTitle("Bae Rewards 2")
     //     .setColor(0x00AE86)
     //     .setDescription("A person can win multiple giveaways")
+    //     .setImage("https://i.imgur.com/bNT0SMN.png")
     //     .addFields({
     //         name: "Role",
     //         value: "Playboy 35+\nGiga Chad 28+\nChad 21+\nWomanizer 14+\nStud 7+",
@@ -53,12 +54,7 @@ client.once(Events.ClientReady, async c => {
     //         name: "Odds",
     //         value: "1\n0.9\n0.8\n0.7\n0.6",
     //         inline: true
-    //     },
-    //         {
-    //             name: "Num of Winners",
-    //             value: "5\n6\n7\n11\n21",
-    //             inline: true
-    //         })
+    //     })
 
     // const row = new ActionRowBuilder().addComponents(
     //     new ButtonBuilder()
