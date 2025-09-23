@@ -13,6 +13,11 @@ export default {
             return interaction.reply({ content: "Role information is not available.", ephemeral: true })
         }
 
+        const activeUser = hasRole(Roles.ActiveUser, interaction.member._roles)
+        if(!activeUser) {
+            return interaction.reply({ content: "You must have the BaeRewards2 role to participate in the giveaway.", ephemeral: true })
+        }
+
         const existingEntry = await Entry.findOne({ userId: interaction.user.id })
         if(existingEntry) {
             return interaction.reply({ content: "You have already registered for the giveaway.", ephemeral: true })
