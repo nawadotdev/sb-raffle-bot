@@ -13,7 +13,7 @@ export default {
             return interaction.reply({ content: "Role information is not available.", ephemeral: true })
         }
 
-        const activeUser = hasRole(Roles.ActiveUser, interaction.member._roles)
+        const activeUser = hasRole(Roles.Active, interaction.member._roles)
         if(!activeUser) {
             return interaction.reply({ content: "You must have the BaeRewards2 role to participate in the giveaway.", ephemeral: true })
         }
@@ -38,7 +38,7 @@ export default {
             womanizerGa,
             studGa
         })
-        // await newEntry.save()
+        await newEntry.save()
 
         const embed = new EmbedBuilder().setTitle("Bae Rewards 2 Raffle").setDescription("You have successfully registered for the giveaway!").setColor(0x00AE86).addFields(
             { name: "Playboy Giveaway", value: playboyGa ? "✅" : "❌" },
