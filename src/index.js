@@ -27,54 +27,54 @@ const client = new Client({
 client.once(Events.ClientReady, async c => {
     console.log(`Ready! Logged in as ${c.user.tag}`)
 
-    // const guildId = "1183302319987752971"
-    // const channelId = "1420097709724930220"
+//     const guildId = "1183302319987752971"
+//     const channelId = "1420097709724930220"
 
-    // const guild = await client.guilds.fetch(guildId)
-    // if (!guild) {
-    //     console.error("Guild not found")
-    //     return
-    // }
-    // const channel = await guild.channels.fetch(channelId)
-    // if (!channel) {
-    //     console.error("Channel not found")
-    //     return
-    // }
+//     const guild = await client.guilds.fetch(guildId)
+//     if (!guild) {
+//         console.error("Guild not found")
+//         return
+//     }
+//     const channel = await guild.channels.fetch(channelId)
+//     if (!channel) {
+//         console.error("Channel not found")
+//         return
+//     }
 
-    // const embed = new EmbedBuilder()
-    //     .setTitle("Bae Rewards 2")
-    //     .setColor(0x00AE86)
-    //     .setDescription("A person can win multiple giveaways")
-    //     .setImage("https://i.imgur.com/bNT0SMN.png")
-    //     .addFields({
-    //         name: "Role",
-    //         value: "Playboy 35+\nGiga Chad 28+\nChad 21+\nWomanizer 14+\nStud 7+",
-    //         inline: true
-    //     }, {
-    //         name: "Odds",
-    //         value: "1\n0.9\n0.8\n0.7\n0.6",
-    //         inline: true
-    //     })
+//     const embed = new EmbedBuilder()
+//         .setTitle("Bae Rewards 2")
+//         .setColor(0x00AE86)
+//         .setDescription("To enter the raffle click on the participate button")
+//         .setImage("https://i.imgur.com/X7ZXihf.png")
+//         .addFields({
+//             name: "Roles & Odds ",
+//             value: "```" + `
+// Playboy 35+     - 1
+// Giga Chad 28+   - 0.9
+// Chad 21+        - 0.8
+// Womanizer 14+   - 0.7
+// Stud 7+         - 0.6` + "```",
+//         })
 
-    // const row = new ActionRowBuilder().addComponents(
-    //     new ButtonBuilder()
-    //         .setCustomId("participate")
-    //         .setLabel("Participate")
-    //         .setStyle(ButtonStyle.Primary)
-    //         .setEmoji("🎉"),
-    //     new ButtonBuilder()
-    //         .setCustomId("check")
-    //         .setLabel("Check Entry")
-    //         .setStyle(ButtonStyle.Secondary)
-    //         .setEmoji("🔍"),
-    //     new ButtonBuilder()
-    //         .setCustomId("draw")
-    //         .setLabel("Draw Winners")
-    //         .setStyle(ButtonStyle.Danger)
-    //         .setEmoji("🏆")
-    // )
+//     const row = new ActionRowBuilder().addComponents(
+//         new ButtonBuilder()
+//             .setCustomId("participate")
+//             .setLabel("Participate")
+//             .setStyle(ButtonStyle.Primary)
+//             .setEmoji("🎉"),
+//         new ButtonBuilder()
+//             .setCustomId("check")
+//             .setLabel("Check Entry")
+//             .setStyle(ButtonStyle.Secondary)
+//             .setEmoji("🔍"),
+//         new ButtonBuilder()
+//             .setCustomId("draw")
+//             .setLabel("Draw Winners")
+//             .setStyle(ButtonStyle.Danger)
+//             .setEmoji("🏆")
+//     )
 
-    // await channel.send({ embeds: [embed], components: [row] })
+//     await channel.send({ embeds: [embed], components: [row] })
 })
 
 const buttons = [check, draw, participate]
